@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    <title>ADD DATA</title>
+
+{% endblock %}
+
+{% block content %}
+<h1>helllooo guyyysy</h1>
+<div class="container shadow-lg p-3 mb-5 bg-body rounded">
+<h1 class="text-center"> ORDER FORM</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{form.as_p}}
+        <input type="submit"  value="ADD ORDER" class="btn btn-success btn-lg">
+        <input type="reset" value="RESET BUTTON" class="btn btn-warning btn-lg float-right">
+    </form>
+</div>
+
+{% endblock %}
+
+
+
+
